@@ -1,4 +1,5 @@
 describe('Quiz Generation and Question Navigation', () => { 
+    // This is a test case that checks if the quiz is generated correctly and if the user can navigate through the questions.
     it('should generate the quiz and navigate through questions', () => {
          cy.visit('http://localhost:3000/quizgeneration'); 
          cy.get('select#topic').select('javascript'); 

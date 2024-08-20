@@ -1,4 +1,5 @@
 describe('QuizGeneration Page Load and Form Interaction', () => {
+   // This is a test case that checks if the "Quiz Generation" page loads correctly and if the user can interact with the form on the page.
  it('should load the QuizGeneration page and allow user to select options', () => { 
     cy.visit('http://localhost:3000/quizgeneration'); 
     cy.contains('Quiz Generation Options'); 

@@ -4,6 +4,7 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 describe('Navbar Component', () => {
+  // This is a specific test case that checks if the Navbar component correctly navigates to the Account page when the "Account" link is clicked.
   test('navigates to the Account page when the Account link is clicked', () => {
     const { getByText, container } = render(
       <MemoryRouter initialEntries={['/']}>
@@ -22,6 +23,7 @@ describe('Navbar Component', () => {
     expect(accountPageText && accountPageText.textContent).toContain('lrnr');
   });
 
+  //This is the test case that checks the navigation functionality.
   test('navigates to the Quiz Generation page when the Quiz Generation link is clicked', () => {
     const { getByText, container } = render(
       <MemoryRouter initialEntries={['/']}>
@@ -40,6 +42,7 @@ describe('Navbar Component', () => {
     expect(quizGenPageText && quizGenPageText.textContent).toContain('lrnr');
   });
 
+  //This is the test case that checks the menu closing functionality.
   test('closes the menu when a link is clicked', () => {
     const { getByText, container } = render(
       <MemoryRouter initialEntries={['/']}>
